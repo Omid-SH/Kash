@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/top_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ProgressBar>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/top_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/chart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/convert_chart"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:onClick="changeChart"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="chart.json"
+            app:lottie_loop="true">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/filters"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_list">
+
+        <com.github.mikephil.charting.charts.CandleStickChart
+
+            android:id="@+id/candle_stick_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <com.github.mikephil.charting.charts.LineChart
+
+            android:id="@+id/spark_line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/filters"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_border"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintTop_toBottomOf="@id/chart">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="yearly"
+            android:text="Year"
+            android:textSize="12dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="sixMonth"
+            android:text="6Mon"
+            android:textSize="12dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="threeMonth"
+            android:text="3Mon"
+            android:textSize="12dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="monthly"
+            android:text="Mon"
+            android:textSize="12dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="weekly"
+            android:text="Week"
+            android:textSize="12dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="daily"
+            android:text="Day"
+            android:textSize="12dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toTopOf="@id/chart_data"
+        app:layout_constraintTop_toBottomOf="@id/filters">
+
+    </Space>
+
+    <LinearLayout
+        android:id="@+id/chart_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/chart_data_border"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Symbol"
+                android:textStyle="bold">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/chart_symbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/chart_data_border"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="TotalCount"
+                android:textStyle="bold">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/chart_total_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/chart_data_border"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="TotalTradedVolume"
+                android:textStyle="bold">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/chart_total_volume"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:singleLine="true">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </Space>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

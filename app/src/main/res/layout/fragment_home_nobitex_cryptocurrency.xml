@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GET NOBITEX MARKET DETAIL"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/src_currency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="10dp"
+                            android:background="@drawable/circular_border_solid"
+                            android:fontFamily="@font/profile_font"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:text="From"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:shadowDy="0.5"
+                            android:shadowDx="0.5"
+                            android:elevation="4dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/dst_currency"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                        <TextView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintTop_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@id/src_currency"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:id="@+id/dst_currency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="10dp"
+                            android:fontFamily="@font/profile_font"
+                            android:text="To"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:padding="15dp"
+                            android:shadowDy="0.5"
+                            android:shadowDx="0.5"
+                            android:elevation="4dp"
+                            android:background="@drawable/circular_border_solid" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_gravity="center"
+                        android:id="@+id/check_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="down_arrow.json"
+                        app:lottie_loop="true">
+
+                    </com.airbnb.lottie.LottieAnimationView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/profile_user_bank_cards">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="left">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:background="@drawable/circular_border_solid_market_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="up_down_arrow.json"
+                                app:lottie_loop="true" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Best Sell: "
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:id="@+id/best_sell"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/profile_font"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="right">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circular_border_solid_market_icon">
+
+                            <TextView
+                                android:id="@+id/best_buy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" : Best Buy"
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green" />
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="up_down_arrow.json"
+                                app:lottie_loop="true" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="left">
+
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circular_border_solid_market_icon">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="up_down_arrow.json"
+                                app:lottie_loop="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day High: "
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:id="@+id/day_high"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/profile_font"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circular_border_solid_market_icon">
+
+                            <TextView
+                                android:id="@+id/day_low"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" :Day Low"
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green" />
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="up_down_arrow.json"
+                                app:lottie_loop="true" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="left">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circular_border_solid_market_icon">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="up_down_arrow.json"
+                                app:lottie_loop="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Transaction volume: "
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:id="@+id/volume"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/profile_font"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="right">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circular_border_solid_market_icon">
+
+                            <TextView
+                                android:id="@+id/day_change"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text=" :24 Hour Change"
+                                android:fontFamily="@font/profile_font"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/green" />
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_fileName="up_down_arrow.json"
+                                app:lottie_loop="true" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

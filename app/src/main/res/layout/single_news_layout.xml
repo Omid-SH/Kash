@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/circular_border_solid_news_card">
+
+        <TextView
+            android:id="@+id/news_source"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:text="NewsBTC">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:maxLines="2"
+            android:text="Why Cardano (ADA) Founder Predicts Big Ecosystem Growth in 2021"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+
+        </Space>
+
+        <TextView
+            android:id="@+id/news_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Developments at Cardano are building steam, and while Ethereum has had a five-year head start, uncertainty over the release of ETH 2.0 brings doubt on whether the project has what it takes to fend off the competition.
+            Although the prospect of thousands of dApps running on Cardano seems ambitious at the present time, developers IOHK are making moves now to turn Hoskinson’s vision into a reality.">
+
+        </TextView>
+
+
+        <TextView
+
+            android:id="@+id/news_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="right"
+            android:text="Full Article">
+
+        </TextView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp">
+
+        </Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <com.airbnb.lottie.LottieAnimationView
+
+                android:id="@+id/dislike"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="dislike.json"
+                app:lottie_loop="false">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <SeekBar
+
+                android:id="@+id/seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/color_control">
+
+            </SeekBar>
+
+            <com.airbnb.lottie.LottieAnimationView
+
+                android:id="@+id/like"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="like.json"
+                app:lottie_loop="false">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp">
+
+        </Space>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/effected_coin_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="2dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

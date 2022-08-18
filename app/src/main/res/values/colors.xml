@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3C4043</color>
+    <color name="colorPrimaryDark">#2A2C2F</color>
+    <color name="colorAccent">#B9C2CA</color>
+
+    <color name="back_fingerprint">#555A5E</color>
+
+    <color name="swirl_ridge">#232528</color>
+    <color name="swirl_error">#916514</color>
+
+    <color name="roman_silver">#D2DCE5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#5b5b5b</color>
+
+    <color name="red">#FF4D6A</color>
+    <color name="green">#33FF99</color>
+
+
+    <color name="golden_green">#916514</color>
+    <color name="grey">#E9EAEE</color>
+    <color name="yellow">#F8BA0F</color>
+    <color name="good_gray">#535353</color>
+    <color name="blue">#293859</color>
+    <color name="light_gray">#EEEEEE</color>
+
+    <color name="dark">#000000</color>
+
+    <!--candle colors-->
+    <color name="candle_green">#0d9a01</color>
+    <color name="candle_red">#ff0101</color>
+
+    <color name="muster">#FEDC56</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/getToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getToken"
+        app:layout_constraintBottom_toTopOf="@id/getOrderList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getOrderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getorderlist"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getToken">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/getTradeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gettradeslist"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getOrderList">
+
+    </Button>
+
+    <Button
+        android:id="@+id/getNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getnews"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getTradeList">
+
+    </Button>
+
+    <Button
+        android:id="@+id/getCandle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getcandle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getNews">
+
+    </Button>
+
+    <Button
+        android:id="@+id/getGlobalStat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getglobalstat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getCandle">
+
+    </Button>
+
+    <Button
+        android:id="@+id/getProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getprofile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getGlobalStat">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

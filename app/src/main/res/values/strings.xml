@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">KaSh</string>
+    <string name="getToken">getToken</string>
+    <string name="getorderlist">GetOrderList</string>
+    <string name="gettradeslist">GetTradesList</string>
+    <string name="getnews">GetNews</string>
+    <string name="getcandle">getCandle</string>
+    <string name="getglobalstat">GetGlobalStat</string>
+    <string name="getprofile">getProfile</string>
+
+    <string name="news">news</string>
+    <string name="wallet">wallet</string>
+    <string name="home">home</string>
+    <string name="trade">trade</string>
+    <string name="tools">tools</string>
+
+    <string name="security">Security</string>
+    <string name="profile">Profile</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="rate_review">Rate/Review</string>
+    <string name="about">About</string>
+    <string name="sign_out">Sign out</string>
+    <string name="authentication_header">Fingerprint</string>
+    <string name="authentication_footer">Please put your finger on the sensor</string>
+    <string name="authentication_backup_pin">Need Help? Try backup pin here!</string>
+    <string name="no_finger_print">At least add one fingerprint</string>
+
+    <string name="usernameReg">Username</string>
+    <string name="emailReg">Email</string>
+    <string name="passwordReg">Password</string>
+    <string name="sign_upReg">Sign up</string>
+    <string name="sign_inLog">Sign in</string>
+    <string name="sign_in_redirect">Already a member? Sign in!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up_redirect">Don\'t have an account? Register here!</string>
+
+    <string name="app_share_text_1">NOBITEX\nDate : %s\nFind the latest prices and news about different
+        crypto currencies and lots of interesting tools\nDownload:\n%s</string>
+    <string name="app_share_text_2">NOBITEX\n Find the latest prices and news about different
+        crypto currencies and lots of interesting tools\nDownload:\n%s</string>
+    <string name="app_download_url">https://gitlab.com/Omid-SH/mobilefinalproject.git</string>
+    <string name="about_string">The latest prices and news about different
+        crypto currencies and lots of interesting tools</string>
+    <string name="powered_by">POWERED BY : Amirhosien, Omid</string>
+
+    <string name="user_file_key">FileKeyUser</string>
+    <string name="preference_profile_key">ProfileKey</string>
+    <string name="preference_security_key">SecurityKey</string>
+    <string name="preference_user_pin_key">PinUserKey</string>
+    <string name="preference_favorite_irt_crypto_key">IRTCryptoFavoriteKey</string>
+    <string name="preference_favorite_usdt_crypto_key">USDTCryptoFavoriteKey</string>
+
+    <string name="buy_currency_market_key">BuyCurrencyMarket</string>
+    <string name="sell_currency_market_key">SellCurrencyMarket</string>
+
+    <string name="user_state_new">NewUser126102</string>
+    <string name="user_state_gust">GustUser00191</string>
+    <string name="user_state_signed_in">SignedIn</string>
+
+    <string name="security_state_none">None</string>
+    <string name="security_state_pin">Pin</string>
+    <string name="security_state_fingerprint">FingerPrint</string>
+    <string name="pin_welcome">Welcome</string>
+    <string name="default_pin">1234</string>
+
+    <string name="wrong_pin">Wrong Pin</string>
+
+    <string name="security_header">Select the app security lock</string>
+    <string name="set_pin_header">Set a PIN code</string>
+    <string name="set_pin_header_confirm">Repeat your PIN</string>
+    <string name="set_pin_reach_max_length">Reached maximum PIN length</string>
+
+    <string name="register_not_available">Registration is not available throw API yet</string>
+    <string name="password_recovery_not_available">Password recovery is not available throw API yet</string>
+</resources>

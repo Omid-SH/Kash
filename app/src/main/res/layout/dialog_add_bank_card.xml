@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="400dp"
+    android:background="@drawable/circular_border_solid_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Set your card properties"
+        android:textColor="@color/muster" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/card_bank_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/muster"
+        android:layout_margin="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/profile_font"
+        android:maxLength="20"
+        android:hint="Bank name" />
+
+    <EditText
+        android:id="@+id/card_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/muster"
+        android:layout_margin="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:fontFamily="@font/profile_font"
+        android:maxLength="16"
+        android:hint="Bank number" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dismiss_action"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/profile_font"
+            android:textColor="@color/white"
+            android:background="@drawable/circular_border_solid_primary_dark"
+            android:shadowDx="0.3"
+            android:shadowDy="0.3"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/add_action"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/profile_font"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/circular_border_solid_primary_dark"
+            android:shadowDx="0.3"
+            android:shadowDy="0.3"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</LinearLayout>

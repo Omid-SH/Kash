@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.nobintest">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+
+        <activity
+            android:name=".AppPages.AppActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity
+            android:name=".AppPages.Security.FingerPrintActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.AppIntroActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.SignInUp.LoginActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.SignInUp.PwResetActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.SignInUp.RegistrationActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.Security.SecurityActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.UserProfile.ProfileActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.About.AboutActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.SignInUp.SplashScrActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AppPages.Security.PinActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".AppPages.Security.SetPinActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".graphActivity.GraphActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <service android:name=".backGroundServices.BackGroundService">
+
+        </service>
+
+    </application>
+
+</manifest>
